@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6weeks — Контактна форма</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="page">
+    <div class="card">
+
+      <aside class="card__aside">
+        <div class="card__aside-inner">
+          <span class="card__badge">6weeks</span>
+          <h1 class="card__title">Зв'яжіться з&nbsp;нами</h1>
+          <p class="card__subtitle">
+            Заповніть форму — і ми отримаємо ваше повідомлення на пошту.
+          </p>
+          <ul class="card__features">
+            <li>Швидка відповідь</li>
+            <li>Без спаму</li>
+            <li>Ваші дані в безпеці</li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="card__body">
+        <form class="form" id="contactForm" novalidate>
+
+          <div class="field">
+            <label class="field__label" for="name">Ім'я</label>
+            <input class="field__input" type="text" id="name" name="name"
+                   placeholder="Ваше ім'я" autocomplete="name">
+            <span class="field__error" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="email">
+              Email <span class="field__required">*</span>
+            </label>
+            <input class="field__input" type="email" id="email" name="email"
+                   placeholder="you@example.com" autocomplete="email" required>
+            <span class="field__error" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="message">Повідомлення</label>
+            <textarea class="field__input field__input--textarea" id="message" name="message"
+                      placeholder="Напишіть щось…" rows="4"></textarea>
+            <span class="field__error" aria-live="polite"></span>
+          </div>
+
+          <button class="btn" type="submit" id="submitBtn">
+            <span class="btn__text">Надіслати</span>
+            <span class="btn__loader" aria-hidden="true"></span>
+            <span class="btn__success" aria-hidden="true">
+              <svg class="btn__check" viewBox="0 0 24 24" fill="none">
+                <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Повідомлення надіслано!
+            </span>
+            <span class="btn__fail" aria-hidden="true">Помилка. Спробуйте ще раз</span>
+          </button>
+
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
