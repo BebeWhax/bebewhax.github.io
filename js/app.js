@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  const RECIPIENT = 'nagrebeckiy01@gmail.com';
+  const RECIPIENT = "6weeks.13h@gmail.com";
   const SUBJECT = '6weeks - Форма заповнена';
   const ENDPOINT = 'https://formsubmit.co/ajax/' + RECIPIENT;
   const RESET_DELAY = 3000; 
