@@ -1,79 +1,367 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>6weeks — Контактна форма</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Світ Покрівлі — покрівельні матеріали в Рівному | Металочерепиця, профнастил, водостоки</title>
+  <meta name="description" content="Світ Покрівлі — ексклюзивний представник Ruukki та ВВМ Явір у Західному регіоні. Металочерепиця, металопрофіль, сайдинг, водостічні системи, дахові вікна. м. Рівне, вул. Млинівська, 25. ☎ (0362) 63-08-27">
+  <meta name="keywords" content="покрівельні матеріали Рівне, металочерепиця Рівне, профнастил, водостічні системи, сайдинг, дахові вікна, Ruukki, ВВМ Явір">
+  <link rel="canonical" href="https://svitpokrivli.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:title" content="Світ Покрівлі — покрівельні матеріали в Рівному">
+  <meta property="og:description" content="Металочерепиця, металопрофіль, сайдинг, водостоки та дахові вікна від офіційного імпортера. Гарантія до 50 років.">
+  <meta property="og:url" content="https://svitpokrivli.com/">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured data: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Світ Покрівлі",
+    "description": "Покрівельні матеріали в Рівному: металочерепиця, металопрофіль, сайдинг, водостічні системи, дахові вікна.",
+    "url": "https://svitpokrivli.com/",
+    "email": "info@svitpokrivli.com",
+    "telephone": "+380362630827",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "вул. Млинівська, 25",
+      "addressLocality": "Рівне",
+      "addressCountry": "UA"
+    },
+    "openingHours": "Mo-Fr 09:00-17:00"
+  }
+  </script>
 </head>
 <body>
 
-  <main class="page">
-    <div class="card">
-
-      <aside class="card__aside">
-        <div class="card__aside-inner">
-          <span class="card__badge">6weeks</span>
-          <h1 class="card__title">Зв'яжіться з&nbsp;нами</h1>
-          <p class="card__subtitle">
-            Заповніть форму — і ми отримаємо ваше повідомлення на пошту.
-          </p>
-          <ul class="card__features">
-            <li>Швидка відповідь</li>
-            <li>Без спаму</li>
-            <li>Ваші дані в безпеці</li>
-          </ul>
-        </div>
-      </aside>
-
-      <section class="card__body">
-        <form class="form" id="contactForm" novalidate>
-
-          <div class="field">
-            <label class="field__label" for="name">Ім'я</label>
-            <input class="field__input" type="text" id="name" name="name"
-                   placeholder="Ваше ім'я" autocomplete="name">
-            <span class="field__error" aria-live="polite"></span>
-          </div>
-
-          <div class="field">
-            <label class="field__label" for="email">
-              Email <span class="field__required">*</span>
-            </label>
-            <input class="field__input" type="email" id="email" name="email"
-                   placeholder="you@example.com" autocomplete="email" required>
-            <span class="field__error" aria-live="polite"></span>
-          </div>
-
-          <div class="field">
-            <label class="field__label" for="message">Повідомлення</label>
-            <textarea class="field__input field__input--textarea" id="message" name="message"
-                      placeholder="Напишіть щось…" rows="4"></textarea>
-            <span class="field__error" aria-live="polite"></span>
-          </div>
-
-          <button class="btn" type="submit" id="submitBtn">
-            <span class="btn__text">Надіслати</span>
-            <span class="btn__loader" aria-hidden="true"></span>
-            <span class="btn__success" aria-hidden="true">
-              <svg class="btn__check" viewBox="0 0 24 24" fill="none">
-                <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5"
-                      stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              Повідомлення надіслано!
-            </span>
-            <span class="btn__fail" aria-hidden="true">Помилка. Спробуйте ще раз</span>
-          </button>
-
-        </form>
-      </section>
-
+  <!-- ===== HEADER ===== -->
+  <div class="topbar">
+    <div class="container topbar__in">
+      <span class="topbar__item">📍 м. Рівне, вул. Млинівська, 25</span>
+      <span class="topbar__item">Пн–Пт: 9:00–17:00</span>
+      <a class="topbar__item topbar__mail" href="mailto:info@svitpokrivli.com">info@svitpokrivli.com</a>
     </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header__in">
+      <a href="#home" class="logo" aria-label="Світ Покрівлі — на головну">
+        <svg class="logo__mark" viewBox="0 0 44 36" aria-hidden="true">
+          <path d="M2 22 L22 4 L42 22" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M10 26 L22 15 L34 26" fill="none" stroke="var(--clay)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="18" y="27" width="8" height="8" rx="1.5" fill="var(--clay)"/>
+        </svg>
+        <span class="logo__text">СВІТ<br><em>ПОКРІВЛІ</em></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Головне меню">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link is-active">Головна</a></li>
+          <li><a href="#about" class="nav__link">Про компанію</a></li>
+          <li class="nav__item--drop">
+            <a href="#catalog" class="nav__link">Продукція <svg viewBox="0 0 10 6" class="nav__chev"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+            <ul class="nav__drop">
+              <li><a href="#catalog" data-cat="tile">Металочерепиця</a></li>
+              <li><a href="#catalog" data-cat="profile">Металопрофіль</a></li>
+              <li><a href="#catalog" data-cat="siding">Сайдинг і підсофіт</a></li>
+              <li><a href="#catalog" data-cat="films">Підпокрівельні плівки</a></li>
+              <li><a href="#catalog" data-cat="gutters">Водостічні системи</a></li>
+              <li><a href="#catalog" data-cat="tin">Вироби з жерсті</a></li>
+              <li><a href="#catalog" data-cat="windows">Дахові вікна</a></li>
+            </ul>
+          </li>
+          <li><a href="#steps" class="nav__link">Як ми працюємо</a></li>
+          <li><a href="#contact" class="nav__link">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__cta">
+        <a href="tel:+380979999032" class="header__phone">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z" fill="currentColor"/></svg>
+          <span>(097) 99-99-032</span>
+        </a>
+        <button class="btn btn--clay btn--sm" data-open-form>Замовити дзвінок</button>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+  <!-- ===== HERO / VIDEO LOOP ===== -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+    <div class="hero__grain" aria-hidden="true"></div>
+    <div class="hero__vignette" aria-hidden="true"></div>
+
+    <div class="container hero__content">
+      <p class="hero__kicker reveal">Покрівельні матеріали • Рівне</p>
+      <h1 class="hero__title">
+        <span class="reveal d1">Дах, який</span>
+        <span class="reveal d2"><em>переживе</em> будь-яку</span>
+        <span class="reveal d3">погоду</span>
+      </h1>
+      <p class="hero__sub reveal d4">Ексклюзивний представник Ruukki та ВВМ&nbsp;Явір у Західному регіоні. Металочерепиця з гарантією до&nbsp;50&nbsp;років, безкоштовний розрахунок покрівлі.</p>
+      <div class="hero__actions reveal d5">
+        <a href="#catalog" class="btn btn--clay">Переглянути продукцію</a>
+        <button class="btn btn--ghost" data-open-form>Безкоштовний розрахунок</button>
+      </div>
+    </div>
+
+    <div class="hero__stats">
+      <div class="container hero__stats-in">
+        <div class="stat"><b data-count="50">0</b><span>років гарантії<br>на покриття Ruukki</span></div>
+        <div class="stat"><b data-count="7">0</b><span>категорій<br>продукції</span></div>
+        <div class="stat"><b data-count="15">0</b><span>брендів з Європи<br>та України</span></div>
+        <div class="stat"><b>0&nbsp;грн</b><span>консультація та<br>розрахунок матеріалів</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section class="cats section" id="categories">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__kicker">Каталог</p>
+        <h2 class="section__title">Все для даху —<br>в одному місці</h2>
+      </div>
+      <div class="cats__grid" id="catsGrid"><!-- JS --></div>
+    </div>
+  </section>
+
+  <!-- ===== CATALOG ===== -->
+  <section class="catalog section section--dark" id="catalog">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__kicker">Продукція</p>
+        <h2 class="section__title">Оберіть свій матеріал</h2>
+      </div>
+      <div class="catalog__tabs" id="catalogTabs" role="tablist"><!-- JS --></div>
+      <div class="catalog__grid" id="catalogGrid"><!-- JS --></div>
+    </div>
+  </section>
+
+  <!-- ===== ADVANTAGES ===== -->
+  <section class="adv section" id="advantages">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__kicker">Чому ми</p>
+        <h2 class="section__title">Купуйте напряму<br>в офіційного імпортера</h2>
+      </div>
+      <div class="adv__grid">
+        <article class="adv__card reveal">
+          <span class="adv__num">01</span>
+          <h3>Сертифікована якість</h3>
+          <p>Уся продукція пройшла необхідні перевірки якості та має сертифікати. Гарантія на матеріали — від 10 до 50 років.</p>
+        </article>
+        <article class="adv__card reveal d1">
+          <span class="adv__num">02</span>
+          <h3>Фахова консультація</h3>
+          <p>Безкоштовно допоможемо підібрати матеріал і зробимо точний розрахунок покрівлі під ваш проєкт.</p>
+        </article>
+        <article class="adv__card reveal d2">
+          <span class="adv__num">03</span>
+          <h3>Чесна ціна</h3>
+          <p>Лояльна цінова політика офіційного представника — без посередників і прихованих націнок.</p>
+        </article>
+        <article class="adv__card reveal d3">
+          <span class="adv__num">04</span>
+          <h3>Швидка доставка</h3>
+          <p>Мінімальні терміни поставки зі складу в Рівному — на об'єкт або самовивозом.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STEPS ===== -->
+  <section class="steps section section--paper" id="steps">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__kicker">Як ми працюємо</p>
+        <h2 class="section__title">Чотири кроки<br>до нового даху</h2>
+      </div>
+      <ol class="steps__list">
+        <li class="step reveal"><b>1</b><h3>Заявка</h3><p>Телефонуйте або залишайте заявку на сайті — чи завітайте до нас на Млинівську, 25.</p></li>
+        <li class="step reveal d1"><b>2</b><h3>Розрахунок</h3><p>Узгоджуємо деталі замовлення та безкоштовно рахуємо вартість матеріалів.</p></li>
+        <li class="step reveal d2"><b>3</b><h3>Доставка</h3><p>Відвантажуємо зі складу або доставляємо просто на ваш об'єкт.</p></li>
+        <li class="step reveal d3"><b>4</b><h3>Супровід</h3><p>Консультуємо щодо застосування продукції на всіх етапах монтажу.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== BRANDS ===== -->
+  <section class="brands" id="brands" aria-label="Наші бренди">
+    <div class="brands__track">
+      <div class="brands__row" id="brandsRow"><!-- JS --></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container about__in">
+      <div class="about__text reveal">
+        <p class="section__kicker">Про компанію</p>
+        <h2 class="section__title">Світ Покрівлі —<br>надійно, як добрий дах</h2>
+        <p>Ми — ексклюзивний представник провідних світових виробників покрівельних матеріалів у Західному регіоні України. Пропонуємо сім основних категорій продукції: металочерепицю, металопрофіль, сайдинг, підпокрівельні плівки, водостічні системи, вироби з жерсті та дахові вікна.</p>
+        <p>Матеріали від наших партнерів застосовуються для влаштування дахів, огорож і стін — від приватних будинків до промислових об'єктів.</p>
+        <ul class="about__list">
+          <li>Офіційний імпортер Ruukki (Фінляндія) та ВВМ Явір (Україна)</li>
+          <li>Гарантія на продукцію до 50 років</li>
+          <li>Власний склад у Рівному</li>
+          <li>Безкоштовні консультації та розрахунок покрівлі</li>
+        </ul>
+        <a href="#contact" class="btn btn--dark">Зв'язатися з нами</a>
+      </div>
+      <div class="about__visual reveal d2" aria-hidden="true">
+        <div class="about__frame">
+          <svg viewBox="0 0 300 260" class="about__svg">
+            <path d="M20 130 L150 30 L280 130" fill="none" stroke="var(--clay)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M55 150 L150 76 L245 150 L245 235 L55 235 Z" fill="var(--ink-2)"/>
+            <rect x="125" y="175" width="50" height="60" rx="3" fill="var(--clay)"/>
+            <rect x="78" y="168" width="30" height="30" rx="3" fill="var(--sun)"/>
+            <rect x="192" y="168" width="30" height="30" rx="3" fill="var(--sun)"/>
+            <path d="M55 150 L150 76 L245 150" fill="none" stroke="var(--paper)" stroke-width="4" opacity=".25"/>
+          </svg>
+          <div class="about__badge">
+            <b>до 50</b><span>років гарантії</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta section section--clay" id="cta">
+    <div class="container cta__in">
+      <div class="reveal">
+        <h2 class="cta__title">Отримайте безкоштовний розрахунок покрівлі</h2>
+        <p class="cta__sub">Залиште номер — передзвонимо протягом робочого дня, порахуємо матеріали та вартість.</p>
+      </div>
+      <form class="cta__form reveal d1" id="ctaForm" novalidate>
+        <input type="text" name="name" placeholder="Ваше ім'я" required aria-label="Ваше ім'я">
+        <input type="tel" name="phone" placeholder="+38 (0__) ___-__-__" required aria-label="Телефон">
+        <button type="submit" class="btn btn--dark">Замовити дзвінок</button>
+        <p class="cta__note">Прототип: форма демонстраційна, дані нікуди не надсилаються.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__kicker">Контакти</p>
+        <h2 class="section__title">Завітайте до нас</h2>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__cards reveal">
+          <a class="ccard" href="https://maps.google.com/?q=Рівне,+вул.+Млинівська,+25" target="_blank" rel="noopener">
+            <span class="ccard__label">Адреса</span>
+            <b>м. Рівне, вул. Млинівська, 25</b>
+            <span class="ccard__hint">Відкрити на мапі →</span>
+          </a>
+          <div class="ccard">
+            <span class="ccard__label">Телефони</span>
+            <b><a href="tel:+380362630827">(0362) 63-08-27</a></b>
+            <b><a href="tel:+380979999032">(097) 99-99-032</a></b>
+            <b><a href="tel:+380952810015">(095) 28-100-15</a></b>
+          </div>
+          <div class="ccard">
+            <span class="ccard__label">Графік роботи</span>
+            <b>Пн–Пт: 9:00 – 17:00</b>
+            <span class="ccard__hint">Сб–Нд: вихідні</span>
+          </div>
+          <a class="ccard" href="mailto:info@svitpokrivli.com">
+            <span class="ccard__label">Email</span>
+            <b>info@svitpokrivli.com</b>
+            <span class="ccard__hint">Напишіть нам →</span>
+          </a>
+        </div>
+        <div class="contact__map reveal d2">
+          <iframe title="Світ Покрівлі на мапі" src="https://www.google.com/maps?q=%D0%A0%D1%96%D0%B2%D0%BD%D0%B5,%20%D0%B2%D1%83%D0%BB.%20%D0%9C%D0%BB%D0%B8%D0%BD%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0%2025&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
   </main>
 
-  <script src="js/app.js"></script>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__in">
+      <div class="footer__col footer__brand">
+        <a href="#home" class="logo logo--light">
+          <svg class="logo__mark" viewBox="0 0 44 36" aria-hidden="true">
+            <path d="M2 22 L22 4 L42 22" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 26 L22 15 L34 26" fill="none" stroke="var(--clay)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="18" y="27" width="8" height="8" rx="1.5" fill="var(--clay)"/>
+          </svg>
+          <span class="logo__text">СВІТ<br><em>ПОКРІВЛІ</em></span>
+        </a>
+        <p>Покрівельні матеріали в Рівному з гарантією якості. Офіційний представник європейських та українських виробників.</p>
+      </div>
+      <nav class="footer__col" aria-label="Меню сайту">
+        <h4>Меню</h4>
+        <a href="#home">Головна</a>
+        <a href="#about">Про компанію</a>
+        <a href="#catalog">Продукція</a>
+        <a href="#steps">Як ми працюємо</a>
+        <a href="#contact">Контакти</a>
+      </nav>
+      <nav class="footer__col" aria-label="Продукція">
+        <h4>Продукція</h4>
+        <a href="#catalog" data-cat="tile">Металочерепиця</a>
+        <a href="#catalog" data-cat="profile">Металопрофіль</a>
+        <a href="#catalog" data-cat="siding">Сайдинг і підсофіт</a>
+        <a href="#catalog" data-cat="films">Підпокрівельні плівки</a>
+        <a href="#catalog" data-cat="gutters">Водостічні системи</a>
+        <a href="#catalog" data-cat="tin">Вироби з жерсті</a>
+        <a href="#catalog" data-cat="windows">Дахові вікна</a>
+      </nav>
+      <div class="footer__col">
+        <h4>Контакти</h4>
+        <a href="tel:+380362630827">(0362) 63-08-27</a>
+        <a href="tel:+380979999032">(097) 99-99-032</a>
+        <a href="tel:+380952810015">(095) 28-100-15</a>
+        <a href="mailto:info@svitpokrivli.com">info@svitpokrivli.com</a>
+        <p>м. Рівне, вул. Млинівська, 25</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-in">
+        <span>© <span id="year"></span> Світ Покрівлі. Всі права захищено.</span>
+        <a href="#home" class="footer__top">Нагору ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== MODAL ===== -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close-modal aria-label="Закрити">✕</button>
+      <h3 id="modalTitle">Замовити дзвінок</h3>
+      <p class="modal__sub">Залиште контакти — передзвонимо протягом робочого дня.</p>
+      <form id="modalForm" novalidate>
+        <input type="text" name="name" placeholder="Ваше ім'я" required aria-label="Ваше ім'я">
+        <input type="tel" name="phone" placeholder="+38 (0__) ___-__-__" required aria-label="Телефон">
+        <button type="submit" class="btn btn--clay btn--full">Надіслати</button>
+        <p class="cta__note">Прототип: форма демонстраційна.</p>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
