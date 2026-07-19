@@ -584,7 +584,7 @@ img { max-width: 100%; display: block; }
   text-transform: uppercase;
   color: var(--color-text);
 }
-.process__link { flex: none; margin-top: 8px; font: var(--type-body); color: var(--color-body-text); }
+.process__link { flex: none; margin-top: auto; font: var(--type-body); color: var(--color-body-text); }
 
 .process__panel {
   display: grid;
