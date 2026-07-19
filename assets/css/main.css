@@ -324,6 +324,17 @@ img { max-width: 100%; display: block; }
 }
 .services__head-text { display: flex; flex-direction: column; gap: 16px; }
 .services__subtitle { margin: 0; font: var(--type-body); color: var(--color-body-text); }
+.services__link {
+  flex: none;
+  font: var(--type-body);
+  color: var(--color-body-text);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  white-space: nowrap;
+}
+.services__link:hover { color: var(--color-text); }
+
+.services__cta { display: flex; justify-content: flex-end; margin-top: 40px; }
 
 .services__track {
   display: grid;
@@ -1306,6 +1317,8 @@ img { max-width: 100%; display: block; }
     justify-content: space-between;
     margin-top: 24px;
   }
+  .services__cta { margin-top: 24px; }
+  .services__cta .btn { width: 100%; }
     .contact__note.for-mobile {
       display: flex;
     }
